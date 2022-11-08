@@ -55,14 +55,14 @@ img {
     width: 100%;
 }
 
+ul {
+    margin: 0;
+}
+
 a {
     color: #ed5a25;
     text-decoration: none;
     /* No underlining */
-}
-
-ul {
-    margin: 0;
 }
 
 a:hover {
@@ -107,4 +107,23 @@ a:focus {
 #header {
     background-color: #050505;
     color: #ffffff;
+}
+
+#header a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#header a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+#header a:focus {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+#header li {
+    display: inline-block
 }
