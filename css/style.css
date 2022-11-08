@@ -1,0 +1,110 @@
+/*Colours used:
+Primary - White -#FFFFFF
+Secondary - Black -#050505
+
+Typography used:
+Heading 1 - WorkSans - SemiBold - 40pt
+Heading 2 - WorkSans - Medium - 30pt
+Heading 3 - OpenSans - Regular - 18pt
+Body Copy - OpenSans - Light - 14pt
+Button Text - OpenSans - Regular - 16pt
+Nav Bar Neautral - WorkSans - Light - 20pt
+Nav Bar Active - WorkSans - Light - Underlined - 20pt
+*/
+
+body {
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 19px;
+    font-style: normal;
+    color: #050505;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 19px;
+}
+
+h1 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+h3 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    color: #ed5a25;
+    text-decoration: none;
+    /* No underlining */
+}
+
+ul {
+    margin: 0;
+}
+
+a:hover {
+    color: #9c2a00;
+    text-decoration: underline;
+    /* Underlining when hovering over a link */
+}
+
+a:focus {
+    color: #9c2a00;
+    text-decoration: underline;
+}
+
+.contact-button {
+    display: inline-block;
+    background-color: #050505;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 140px;
+    padding-right: 140px;
+    border-radius: 10px;
+    border: 1px solid #050505;
+}
+
+.download-resume-button {
+    display: inline-block;
+    background-color: #050505;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 140px;
+    padding-right: 140px;
+    border-radius: 10px;
+    border: 1px solid #050505;
+}
+
+#header {
+    background-color: #050505;
+    color: #ffffff;
+}
