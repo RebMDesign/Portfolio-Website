@@ -9,36 +9,36 @@
     <link href="/img/favicon.ico" rel="shortcut icon">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;500;600&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,400&display=swap"
-        rel="stylesheet">
+    <link href="fonts/worksans.css" rel="stylesheet">
+    <link href="fonts/opensans.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
     <header id="header">
-        <div>
-            <img src="./img/logo/rmlogosmall.svg" alt="Logo">
+        <div class="container">
+            <img class="logo" src="/img/logo/rmlogosmall.svg" alt="Logo">
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
+                    <li>|</li>
                     <li><a href="work.html">Work</a></li>
+                    <li>|</li>
                     <li><a href="about.html">About</a></li>
+                    <li>|</li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <div id="hero">
+        <div id="photo" class="container">
             <picture>
-                <source srcset="./img/home/headermedium.png" media="(min-width:768px, max-width:834px)">
-                <img src="./img/home/headerlarge.png" alt="Photograph">
+                <source srcset="img/home/headermedium.png" media="(min-width:768px, max-width:834px)">
+                <img src="img/home/headerlarge.png" alt="Photograph">
             </picture>
+        </div>
+        <div id="hero" class="container">
             <h1>Hello!</h1>
             <span>
                 <h2>I'm Rebecca and I am a UI Designer</h2>
@@ -46,15 +46,15 @@
             <p>I am always eager to collaborate on exciting products. Please check out my portfolio through the links on
                 my website and connect with me to keep up to date with upcoming portfolio additions.</p>
         </div>
-        <div id="recent-work">
+        <div id="recent-work" class="container">
             <h3>Recent Work</h3>
         </div>
         <div id="projects">
             <div>
                 <a href="hollyhock.html">
                     <picture>
-                        <source srcset="./img/home/hollyhockprojectsmall.png" media="(max-width:767px)">
-                        <img src="./img/home/hollyhockprojectlarge.png" alt="HollyHockThumbnail">
+                        <source srcset="/img/home/hollyhockprojectsmall.png" media="(max-width:767px)">
+                        <img src="/img/home/hollyhockprojectlarge.png" alt="HollyHockThumbnail">
                     </picture>
                 </a>
             </div>
@@ -76,8 +76,8 @@
             <div>
                 <a href="accessatlas.html">
                     <picture>
-                        <source srcset="./img/home/accessatlasprojectsmall.png" media="(max-width:767px)">
-                        <img src="./img/home/accessatlasprojectlarge.png" alt="AccessAtlasThumbnail">
+                        <source srcset="/img/home/accessatlasprojectsmall.png" media="(max-width:767px)">
+                        <img src="/img/home/accessatlasprojectlarge.png" alt="AccessAtlasThumbnail">
                     </picture>
                 </a>
             </div>
@@ -86,7 +86,7 @@
     <footer id="contact">
         <p>Get In Touch</p>
         <a href="tel:07833394803">+447833394803</a>
-        <div>
+        <div class="contact-text">
             <a href="mailto:rebecca@rebeccamurray.work" class="contact-button">Email Me</a>
         </div>
         <div id="social-links">

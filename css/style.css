@@ -12,6 +12,15 @@ Nav Bar Neautral - WorkSans - Light - 20pt
 Nav Bar Active - WorkSans - Light - Underlined - 20pt
 */
 
+* {
+    box-sizing: border-box
+}
+
+html {
+
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: white;
     font-family: 'Open Sans', sans-serif;
@@ -42,8 +51,10 @@ h2 {
 
 h3 {
     font-family: 'Work Sans', sans-serif;
-    font-size: 18px;
+    font-size: 30px;
     font-weight: 500;
+    width: 100%;
+    margin: 0;
 }
 
 p {
@@ -57,6 +68,8 @@ img {
 
 ul {
     margin: 0;
+    padding: 0;
+    list-style-type: none
 }
 
 a {
@@ -90,6 +103,11 @@ a:focus {
     border: 1px solid #050505;
 }
 
+.contact-button:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
 .download-resume-button {
     display: inline-block;
     background-color: #050505;
@@ -107,6 +125,41 @@ a:focus {
 #header {
     background-color: #050505;
     color: #ffffff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 15px 0;
+    text-align: center;
+
+}
+
+.logo {
+    width: 224px;
+    padding-left: 48px;
+    padding-top: 40px;
+}
+
+#header .container {
+    display: flex;
+    justify-content: space-between
+}
+
+#hero {
+    margin-top: 51px;
+    margin-botton: 38px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#recent-work {
+    text-align: center;
+    padding-top: 31px;
+    padding-bottom: 31px;
+    padding-left: 101px;
+    padding-right: 101px;
+    color: #ffffff;
+    background-color: #050505;
 }
 
 #header a {
@@ -124,6 +177,38 @@ a:focus {
     text-decoration: underline;
 }
 
+#header ul {
+    margin-top: 80px;
+    margin-right: 64px
+}
+
+
 #header li {
-    display: inline-block
+    display: inline-block;
+    padding-left: 60px
+}
+
+footer {
+
+    padding: 50px 0px;
+    background-color: white;
+    text-align: center
+}
+
+.contact-text {
+    margin: 20px 0;
+}
+
+#social-links svg {
+    width: 45px;
+    height: auto;
+
+}
+
+#photo img {
+    margin-top: 166px
+}
+
+#photo.container {
+    background-color: #050505;
 }
