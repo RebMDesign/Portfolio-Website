@@ -145,23 +145,6 @@ a:focus {
     justify-content: space-between
 }
 
-#hero {
-    margin-top: 51px;
-    margin-botton: 38px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-#recent-work {
-    text-align: center;
-    padding-top: 31px;
-    padding-bottom: 31px;
-    padding-left: 101px;
-    padding-right: 101px;
-    color: #ffffff;
-    background-color: #050505;
-}
-
 #header a {
     color: #ffffff;
     text-decoration: none;
@@ -186,6 +169,36 @@ a:focus {
 #header li {
     display: inline-block;
     padding-left: 60px
+}
+
+#hero {
+    margin-top: 51px;
+    margin-botton: 38px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#recent-work {
+    text-align: center;
+    padding-top: 31px;
+    padding-bottom: 31px;
+    padding-left: 101px;
+    padding-right: 101px;
+    color: #ffffff;
+    background-color: #050505;
+}
+
+#projects {
+    background-color: #050505;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+#projects .container {
+    border-radius: 10px;
+    border: 1px solid #050505;
+    background-color: #ffffff;
 }
 
 footer {
