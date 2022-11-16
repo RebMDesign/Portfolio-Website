@@ -29,6 +29,7 @@ body {
     line-height: 19px;
     font-style: normal;
     color: #050505;
+    padding-top: 243px;
 }
 
 h1,
@@ -50,7 +51,7 @@ h2 {
 }
 
 h3 {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 30px;
     font-weight: 500;
     width: 100%;
@@ -108,20 +109,6 @@ a:focus {
     text-decoration: underline;
 }
 
-.download-resume-button {
-    display: inline-block;
-    background-color: #050505;
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: 400;
-    padding-top: 9px;
-    padding-bottom: 9px;
-    padding-left: 140px;
-    padding-right: 140px;
-    border-radius: 10px;
-    border: 1px solid #050505;
-}
-
 #header {
     background-color: #050505;
     color: #ffffff;
@@ -173,7 +160,7 @@ a:focus {
 
 #hero {
     margin-top: 51px;
-    margin-botton: 38px;
+    margin-bottom: 38px;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -195,10 +182,33 @@ a:focus {
     padding-bottom: 20px;
 }
 
+#projects a {
+    color: black;
+}
+
 #projects .container {
     border-radius: 10px;
     border: 1px solid #050505;
     background-color: #ffffff;
+    margin-bottom: 20px;
+}
+
+#projects .container img {
+    border-radius: 10px;
+}
+
+.project-description {
+    margin: 14px;
+}
+
+#projects h5,
+#projects h4 {
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+#projects .container:last-child {
+    margin-bottom: 0;
 }
 
 footer {
@@ -206,6 +216,19 @@ footer {
     padding: 50px 0px;
     background-color: white;
     text-align: center
+}
+
+footer a {
+    font-size: 14px;
+}
+
+footer h2 {
+    margin-bottom: 20px;
+}
+
+footer img {
+    width: 26px;
+    height: 26px;
 }
 
 .contact-text {
@@ -218,10 +241,12 @@ footer {
 
 }
 
-#photo img {
-    margin-top: 166px
-}
-
 #photo.container {
     background-color: #050505;
+}
+
+@media screen and (max-width: 833px) {
+    #photo.container {
+        display: none;
+    }
 }
