@@ -355,10 +355,11 @@ Medium devices (640px and larger)
     }
 
     .project-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         padding-left: 60px;
         padding-right: 100px;
-        padding-top: 145px;
-        padding-bottom: 145px;
     }
 
     #accessaproject.container {
@@ -427,12 +428,14 @@ Large devices (1024px or larger)
 
     p {
         font-size: 20px;
+        line-height: 1.35;
     }
 
     #projects .project-description h2 {
         font-size: 36px;
         margin-bottom: 26px;
     }
+
 }
 
 /* ==============================

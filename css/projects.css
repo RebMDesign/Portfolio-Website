@@ -11,17 +11,21 @@ Button Text - OpenSans - Regular - 16pt
 Nav Bar Neautral - WorkSans - Light - 20pt
 Nav Bar Active - WorkSans - Light - Underlined - 20pt
 */
+
+.center-align {
+    display: flex;
+    justify-content: center;
+}
+
 body {
     background-color: #ffffff;
 }
 
-#project-intro h1,
-#project-intro h3,
-#project-intro p {
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+#project-intro .heading {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 51px;
+    margin-bottom: 38px;
 }
 
 #project-info {
@@ -48,9 +52,21 @@ body {
     margin-bottom: 0px;
 }
 
+.project-section:last-child img {
+    width: 100%;
+}
+
 .project-section h4,
 .project-section p {
     margin: 14px;
+}
+
+#project-intro img {
+    max-width: 600px;
+}
+
+.description h2 {
+    padding-left: 14px;
 }
 
 /* ==============================
@@ -67,4 +83,29 @@ Medium devices (640px and larger)
         padding-bottom: 0;
         margin-bottom: 0;
     }
+
+    #project-intro h1,
+    #project-intro h3,
+    #project-intro p {
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .project-section p {
+        margin: 0;
+    }
+
+    .project-section .description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 60px;
+        padding-right: 100px;
+    }
+
+    .description h2 {
+        padding-left: 0;
+    }
+
 }

@@ -19,6 +19,16 @@ Nav Bar Active - WorkSans - Light - Underlined - 20pt
 
 #about {
     margin: 20px;
+    margin-bottom: 50px;
+}
+
+#about h2 {
+    margin-top: 0;
+}
+
+#about h1 {
+    padding-top: 51px;
+    padding-bottom: 38px;
 }
 
 #about h3 {
@@ -27,7 +37,7 @@ Nav Bar Active - WorkSans - Light - Underlined - 20pt
 }
 
 #about img {
-    max-width: 620px;
+    max-width: 660px;
 }
 
 .download-resume-button {
@@ -174,4 +184,45 @@ Medium devices (640px and larger)
     }
 
 
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+    #skills-tools {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    #about {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    #about-details {
+        padding-left: 80px;
+    }
+
+    .skills-box {
+        padding-top: 0px;
+        padding-bottom: 14px;
+    }
+
+    .tools-box {
+        padding-top: 0px;
+        padding-bottom: 14px;
+    }
+
+    .skills-box h2 {
+        padding: 20px;
+        padding-bottom: 0px;
+        padding-left: 14px;
+    }
+
+    .tools-box h2 {
+        padding: 20px;
+        padding-bottom: 0px;
+        padding-left: 14px;
+    }
 }
