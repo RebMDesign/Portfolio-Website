@@ -52,3 +52,19 @@ body {
 .project-section p {
     margin: 14px;
 }
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 833px) {
+
+    .project-section {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%;
+        border-radius: 0;
+        border: 0;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+}

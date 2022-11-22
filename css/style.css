@@ -58,6 +58,13 @@ h3 {
     margin: 0;
 }
 
+h4 {
+    font-family: 'Opens Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: italic;
+}
+
 p {
     font-size: 14px;
     font-weight: 300;
@@ -80,14 +87,15 @@ a {
 }
 
 a:hover {
-    color: #9c2a00;
+    color: #ffffff;
     text-decoration: underline;
     /* Underlining when hovering over a link */
 }
 
 a:focus {
-    color: #9c2a00;
+    color: #5a5a5a;
     text-decoration: underline;
+    opacity: 0.80;
 }
 
 .contact-button {
@@ -102,11 +110,14 @@ a:focus {
     padding-right: 140px;
     border-radius: 10px;
     border: 1px solid #050505;
+    transition-duration: 0.2s;
+    transition-property: opacity;
 }
 
 .contact-button:hover {
     color: #ffffff;
     text-decoration: underline;
+    opacity: 0.8;
 }
 
 #header {
@@ -123,33 +134,34 @@ a:focus {
 
 .logo {
     width: 224px;
-    padding-left: 48px;
-    padding-top: 40px;
+    padding-top: 33px;
+    padding-bottom: 33px;
 }
 
 #header .container {
+    align-items: center;
+    justify-content: center;
     display: flex;
-    justify-content: space-between
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #header a {
     color: #ffffff;
     text-decoration: none;
+    transform: scale(1);
+    transition: 500ms linear;
 }
 
 #header a:hover {
     color: #ffffff;
     text-decoration: underline;
+    transform: scale(1.5);
 }
 
 #header a:focus {
     color: #ffffff;
     text-decoration: underline;
-}
-
-#header ul {
-    margin-top: 80px;
-    margin-right: 64px
 }
 
 
@@ -201,7 +213,7 @@ a:focus {
     margin: 14px;
 }
 
-#projects h5,
+#projects h2,
 #projects h4 {
     margin-top: 14px;
     margin-bottom: 14px;
@@ -245,8 +257,185 @@ footer img {
     background-color: #050505;
 }
 
+#window1 {
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 4s;
+}
+
+#clouds {
+    animation-duration: 3s;
+    animation-name: cloud-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+#wheel1,
+#wheel2 {
+    animation: wheel-spin 2s infinite linear;
+    transform-origin: center center;
+    transform-box: fill-box;
+}
+
+@keyframes color-change {
+    from {
+        fill: #a2a2a2;
+    }
+
+    to {
+        fill: #f2ba00;
+    }
+}
+
+@keyframes wheel-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+
+@keyframes cloud-move {
+    from {
+        transform: translate(0, 400px);
+    }
+
+    to {
+        transform: translate(1600px, 400px);
+    }
+}
+
 @media screen and (max-width: 833px) {
     #photo.container {
         display: none;
     }
 }
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 833px) {
+    #header .container {
+        flex-direction: row;
+        padding-left: 47px;
+        padding-right: 47px;
+    }
+
+    #header li {
+        padding-left: 38px;
+    }
+
+    #hero.container {
+        text-align: center;
+        margin-left: 197px;
+        margin-right: 197px;
+    }
+
+    body {
+        padding-top: 190px;
+    }
+
+    #projects {
+        padding: 0;
+    }
+
+    #projects .container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%;
+        border-radius: 0;
+        border: 0;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .project-description {
+        padding-left: 60px;
+        padding-right: 100px;
+        padding-top: 145px;
+        padding-bottom: 145px;
+    }
+
+    #accessaproject.container {
+        background-color: #050505;
+        color: white;
+    }
+
+    #accessaproject.container a {
+        color: white;
+    }
+
+    #accesstxt {
+        order: -1;
+    }
+
+    #accessimg {
+        background-color: white;
+    }
+
+    #projects .container img {
+        border-radius: 0;
+    }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+
+    .hero-wrapper {
+        display: flex;
+        flex-direction: column;
+        background-color: #050505;
+        color: white;
+    }
+
+    #recent-work {
+        padding-top: 46px;
+        padding-bottom: 46px;
+    }
+
+    .hero-wrapper #hero {
+        order: -1;
+    }
+
+    #header .container {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    h1 {
+        font-size: 56px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    h3 {
+        font-size: 44px;
+    }
+
+    h4 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    #projects .project-description h2 {
+        font-size: 36px;
+        margin-bottom: 26px;
+    }
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {}

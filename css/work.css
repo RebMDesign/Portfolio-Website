@@ -63,6 +63,44 @@ main h1 {
     color: #ffffff;
 }
 
-#project-list img {
-    border-radius: 10px;
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 833px) {
+    #project-list ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    #project-list li {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%;
+        border-radius: 0;
+        border: 0;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .alternate-position {
+        background-color: #050505;
+        color: white;
+    }
+
+    .alternate-position a,
+    .alternate-position h4 {
+        color: white;
+    }
+
+    .alternate-position {
+        order: -1;
+        display: flex;
+        align-items: center;
+    }
+
+    .project-description {
+        margin: 0;
+    }
+
 }
