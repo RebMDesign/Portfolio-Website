@@ -29,7 +29,36 @@ body {
     line-height: 19px;
     font-style: normal;
     color: #050505;
-    padding-top: 243px;
+    padding-top: 191px;
+}
+
+.navtoggle li:not(:last-child) {
+    display: none;
+}
+
+.navtoggle.responsive li {
+    display: block;
+}
+
+.navtoggle.responsive nav {
+    padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid rgba(255, 127, 80, 0.5);
+}
+
+.navtoggle.responsive li:last-child {
+    padding: 0 0 10px;
+}
+
+.navtoggle li .icon {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 20px;
 }
 
 h1,
@@ -166,7 +195,6 @@ a:focus {
 
 
 #header li {
-    display: inline-block;
     padding-left: 60px
 }
 
@@ -320,6 +348,14 @@ footer img {
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 833px) {
+    #header .navtoggle li:not(:last-child) {
+        display: inline-block;
+    }
+
+    #header .navtoggle li:last-child {
+        display: none;
+    }
+
     #header .container {
         flex-direction: row;
         padding-left: 47px;
@@ -328,6 +364,7 @@ Medium devices (640px and larger)
 
     #header li {
         padding-left: 38px;
+        display: inline-block;
     }
 
     #hero.container {
