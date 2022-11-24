@@ -32,12 +32,41 @@ body {
     padding-top: 191px;
 }
 
+#header.responsive {
+    height: 100%;
+    opacity: 0.9;
+}
+
+#header.responsive .container {
+    height: 100%;
+    font-size: 22px;
+}
+
+
+.fa-bars {
+    width: 18px;
+}
+
+.fa-x {
+    width: 18px;
+}
+
 .navtoggle li:not(:last-child) {
     display: none;
 }
 
-.navtoggle.responsive li {
+#header .navtoggle.responsive li {
     display: block;
+    padding-left: 0;
+
+}
+
+.navtoggle .divider {
+    display: block;
+}
+
+#header .navtoggle.responsive .divider {
+    display: none;
 }
 
 .navtoggle.responsive nav {
@@ -46,8 +75,7 @@ body {
 
 .navtoggle.responsive li {
     display: block;
-    padding: 10px 0;
-    border-top: 1px solid rgba(255, 127, 80, 0.5);
+    padding: 22px 0;
 }
 
 .navtoggle.responsive li:last-child {
@@ -178,14 +206,11 @@ a:focus {
 #header a {
     color: #ffffff;
     text-decoration: none;
-    transform: scale(1);
-    transition: 500ms linear;
 }
 
 #header a:hover {
     color: #ffffff;
     text-decoration: underline;
-    transform: scale(1.5);
 }
 
 #header a:focus {
