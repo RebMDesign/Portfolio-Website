@@ -1,4 +1,8 @@
+var isOpen = false;
+
 function menuToggle() {
+    isOpen = !isOpen;
+
     var x = document.getElementById('mynavtoggle');
     if (x.className === 'navtoggle') {
         x.className += ' responsive';
@@ -17,5 +21,10 @@ function menuToggle() {
     } else {
         icon.className = 'fa-solid fa-bars';
     }
-
 }
+
+addEventListener("resize", (event) => {
+    if (window.innerWidth > 640 && isOpen) {
+        menuToggle();
+    }
+});
