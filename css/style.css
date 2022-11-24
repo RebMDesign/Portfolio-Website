@@ -29,19 +29,20 @@ body {
     line-height: 19px;
     font-style: normal;
     color: #050505;
-    padding-top: 191px;
+    padding-top: 160px;
 }
 
 #header.responsive {
-    height: 100%;
     opacity: 0.9;
+    max-height: 100%;
+    transition: max-height 0.2s ease-out;
 }
 
 #header.responsive .container {
     height: 100%;
     font-size: 22px;
+    max-height: 100%;
 }
-
 
 .fa-bars {
     width: 18px;
@@ -186,7 +187,9 @@ a:focus {
     right: 0;
     padding: 15px 0;
     text-align: center;
-
+    height: 100%;
+    max-height: 176px;
+    transition: max-height 0.2s ease-out;
 }
 
 .logo {
@@ -399,7 +402,7 @@ Medium devices (640px and larger)
     }
 
     body {
-        padding-top: 190px;
+        padding-top: 160px;
     }
 
     #projects {

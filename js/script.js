@@ -21,6 +21,10 @@ function menuToggle() {
     } else {
         icon.className = 'fa-solid fa-bars';
     }
+
+    if (isOpen) {
+        $("#mynavtoggle").hide().fadeIn({ duration: 1000 });
+    }
 }
 
 addEventListener("resize", (event) => {
