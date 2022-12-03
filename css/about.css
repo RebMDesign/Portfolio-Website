@@ -13,216 +13,214 @@ Nav Bar Active - WorkSans - Light - Underlined - 20pt
 */
 
 .center-align {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 #about {
-    margin: 20px;
-    margin-bottom: 50px;
+  margin: 20px;
+  margin-bottom: 50px;
 }
 
 #about h2 {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 #about h1 {
-    padding-top: 51px;
-    padding-bottom: 38px;
+  padding-top: 51px;
+  padding-bottom: 38px;
 }
 
 #about h3 {
-    margin-top: 24px;
-    margin-bottom: 10px;
+  margin-top: 24px;
+  margin-bottom: 10px;
 }
 
 #about img {
-    max-width: 660px;
+  max-width: 660px;
 }
 
 .download-resume-button {
-    display: inline-block;
-    background-color: #050505;
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: 400;
-    padding-top: 9px;
-    padding-bottom: 9px;
-    padding-left: 70px;
-    padding-right: 70px;
-    border-radius: 10px;
-    border: 1px solid #050505;
-    transition-duration: 0.2s;
-    transition-property: opacity;
+  display: inline-block;
+  background-color: #050505;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 70px;
+  padding-right: 70px;
+  border-radius: 10px;
+  border: 1px solid #050505;
+  transition-duration: 0.2s;
+  transition-property: opacity;
 }
 
 .download-resume-button:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 #skills-tools {
-    text-align: center;
-    padding-top: 46px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    color: #ffffff;
-    background-color: #050505;
+  text-align: center;
+  padding-top: 46px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #ffffff;
+  background-color: #050505;
 }
 
 #skills-tools h3 {
-    padding-bottom: 46px;
+  padding-bottom: 46px;
 }
 
 #skills-tools:last-child {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .skills-box {
-    text-align: left;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    margin-bottom: 20px;
-    color: #050505;
-    background-color: #ffffff;
-    border-radius: 10px;
-    border: 1px solid #050505;
+  text-align: left;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  color: #050505;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #050505;
 }
 
 .skills-box li {
-    font-size: 14px;
-    text-align: center;
-    width: 155px;
-    height: 40px;
-    margin: 12px;
-    margin-bottom: 0px;
-    padding-top: 10px;
-    color: #050505;
-    background-color: #ffffff;
-    border-radius: 10px;
-    border: 1px solid #050505;
+  font-size: 14px;
+  text-align: center;
+  width: 155px;
+  height: 40px;
+  margin: 12px;
+  margin-bottom: 0px;
+  padding-top: 10px;
+  color: #050505;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #050505;
 }
 
 .skills-box ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .skills-box h2,
 .tools-box h2 {
-    padding-left: 12px;
-    margin: 0px;
+  padding-left: 12px;
+  margin: 0px;
 }
 
 .tools-box {
-    text-align: left;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    color: #ffffff;
-    background-color: #232323;
-    border-radius: 10px;
-    border: 1px solid #232323
+  text-align: left;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: #ffffff;
+  background-color: #232323;
+  border-radius: 10px;
+  border: 1px solid #232323;
 }
 
 .tools-box ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .tools-box li {
-    font-size: 14px;
-    text-align: center;
-    width: 155px;
-    height: 40px;
-    margin: 12px;
-    margin-bottom: 0px;
-    padding-top: 10px;
-    color: #ffffff;
-    background-color: #050505;
-    border-radius: 10px;
-    border: 1px solid #ffffff;
+  font-size: 14px;
+  text-align: center;
+  width: 155px;
+  height: 40px;
+  margin: 12px;
+  margin-bottom: 0px;
+  padding-top: 10px;
+  color: #ffffff;
+  background-color: #050505;
+  border-radius: 10px;
+  border: 1px solid #ffffff;
 }
 
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 965px) {
-    .about-wrapper {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 100%;
-    }
+  .about-wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+  }
 
-    #about {
-        margin-left: 60px;
-        margin-right: 60px;
-    }
+  #about {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
 
-    #about-details {
-        padding-left: 60px;
-    }
+  #about-details {
+    padding-left: 60px;
+  }
 
-    #skills-tools {
-        padding-top: 46px;
-        padding-bottom: 20px;
-        padding-left: 60px;
-        padding-right: 60px;
-    }
+  #skills-tools {
+    padding-top: 46px;
+    padding-bottom: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 
-    .skills-boxes {
-        display: grid;
-        grid-template-columns: calc(50% - 6px) calc(50% - 6px);
-        column-gap: 12px;
-    }
+  .skills-boxes {
+    display: grid;
+    grid-template-columns: calc(50% - 6px) calc(50% - 6px);
+    column-gap: 12px;
+  }
 
-    .skills-box ul {
-        display: grid;
-        grid-template-columns: 155px 155px;
-        column-gap: 12px;
-    }
-
-
+  .skills-box ul {
+    display: grid;
+    grid-template-columns: 155px 155px;
+    column-gap: 12px;
+  }
 }
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-    #skills-tools {
-        padding-left: 80px;
-        padding-right: 80px;
-    }
+  #skills-tools {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
 
-    #about {
-        margin-left: 80px;
-        margin-right: 80px;
-    }
+  #about {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
 
-    #about-details {
-        padding-left: 80px;
-    }
+  #about-details {
+    padding-left: 80px;
+  }
 
-    .skills-box {
-        padding-top: 0px;
-        padding-bottom: 14px;
-    }
+  .skills-box {
+    padding-top: 0px;
+    padding-bottom: 14px;
+  }
 
-    .tools-box {
-        padding-top: 0px;
-        padding-bottom: 14px;
-    }
+  .tools-box {
+    padding-top: 0px;
+    padding-bottom: 14px;
+  }
 
-    .skills-box h2 {
-        padding: 20px;
-        padding-bottom: 0px;
-        padding-left: 14px;
-    }
+  .skills-box h2 {
+    padding: 20px;
+    padding-bottom: 0px;
+    padding-left: 14px;
+  }
 
-    .tools-box h2 {
-        padding: 20px;
-        padding-bottom: 0px;
-        padding-left: 14px;
-    }
+  .tools-box h2 {
+    padding: 20px;
+    padding-bottom: 0px;
+    padding-left: 14px;
+  }
 }

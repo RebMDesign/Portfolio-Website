@@ -13,99 +13,97 @@ Nav Bar Active - WorkSans - Light - Underlined - 20pt
 */
 
 .center-align {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 body {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 #project-intro .heading {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 51px;
-    margin-bottom: 38px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 51px;
+  margin-bottom: 38px;
 }
 
 #project-info {
-    text-align: center;
-    background-color: #050505;
-    padding-bottom: 20px;
+  text-align: center;
+  background-color: #050505;
+  padding-bottom: 20px;
 }
 
 #project-info h3 {
-    color: #ffffff;
-    padding-top: 24px;
-    padding-bottom: 10px;
+  color: #ffffff;
+  padding-top: 24px;
+  padding-bottom: 10px;
 }
 
 .project-section {
-    border-radius: 10px;
-    border: 1px solid #050505;
-    background-color: #ffffff;
-    margin: 20px;
-    text-align: left;
+  border-radius: 10px;
+  border: 1px solid #050505;
+  background-color: #ffffff;
+  margin: 20px;
+  text-align: left;
 }
 
 .project-section:last-child {
-    margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 .project-section:last-child img {
-    width: 100%;
+  width: 100%;
 }
 
 .project-section h4,
 .project-section p {
-    margin: 14px;
+  margin: 14px;
 }
 
 #project-intro img {
-    max-width: 600px;
+  max-width: 600px;
 }
 
 .description h2 {
-    padding-left: 14px;
+  padding-left: 14px;
 }
 
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 833px) {
+  .project-section {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    border-radius: 0;
+    border: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
 
-    .project-section {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 100%;
-        border-radius: 0;
-        border: 0;
-        padding-bottom: 0;
-        margin-bottom: 0;
-    }
+  #project-intro h1,
+  #project-intro h3,
+  #project-intro p {
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
 
-    #project-intro h1,
-    #project-intro h3,
-    #project-intro p {
-        text-align: center;
-        margin-left: 0;
-        margin-right: 0;
-    }
+  .project-section p {
+    margin: 0;
+  }
 
-    .project-section p {
-        margin: 0;
-    }
+  .project-section .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 60px;
+    padding-right: 100px;
+  }
 
-    .project-section .description {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding-left: 60px;
-        padding-right: 100px;
-    }
-
-    .description h2 {
-        padding-left: 0;
-    }
-
+  .description h2 {
+    padding-left: 0;
+  }
 }
