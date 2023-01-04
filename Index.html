@@ -9,6 +9,7 @@
       content="Rebecca Murray UI/UX Designer based in Glasgow. Portfolio Website"
     />
     <link href="/img/favicon.ico" rel="shortcut icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link href="fonts/worksans.css" rel="stylesheet" />
@@ -19,13 +20,13 @@
   <body>
     <header id="header">
       <div class="container">
-        <img class="logo" src="/img/logo/rmlogosmall.svg" alt="Logo" />
+        <a href="/"><img class="logo" src="/img/logo/rmlogosmall.svg" alt="Logo" /></a>
         <div id="mynavtoggle" class="navtoggle">
           <nav>
             <ul>
               <li><a href="index.html">Home</a></li>
               <li class="divider">|</li>
-              <li><a href="work.html">Work</a></li>
+              <li><a href="work.html">Projects</a></li>
               <li class="divider">|</li>
               <li><a href="about.html">About</a></li>
               <li class="divider">|</li>
@@ -61,11 +62,11 @@
         </div>
       </div>
       <div id="recent-work" class="container">
-        <h3>Recent Work</h3>
+        <a href="/work.html"><h3>Recent Projects</h3></a>
       </div>
       <div id="projects">
         <div class="container">
-          <div>
+          <div class="css-animation">
             <svg
               version="1.1"
               id="ecoanimation"
@@ -2005,32 +2006,6 @@
           </div>
         </div>
 
-        <div id="accessaproject" class="container">
-          <div id="accessimg">
-            <a href="accessatlas.html">
-              <picture>
-                <source
-                  srcset="/img/home/accessatlasprojectsmall.png"
-                  media="(max-width:767px)"
-                />
-                <img
-                  src="/img/home/accessatlasprojectlarge.png"
-                  alt="AccessAtlasThumbnail"
-                />
-              </picture>
-            </a>
-          </div>
-          <div id="accesstxt" class="project-description">
-            <a href="accessatlas.html">
-              <h2>AccessAtlas</h2>
-            </a>
-            <h4>Responsive Web App</h4>
-            <p>
-              Location based maps application with a focus on accessibility for
-              all users.
-            </p>
-          </div>
-        </div>
         <div class="container">
           <div>
             <a href="hollyhock.html">
@@ -2046,14 +2021,41 @@
               </picture>
             </a>
           </div>
-          <div class="project-description">
-            <a href="hollyhock.html">
-              <h2>HollyHock</h2>
+            <div class="project-description" onclick="navigate('hollyhock.html')">
+              <a href="hollyhock.html">
+                <h2>HollyHock</h2>
+              </a>
+              <h4>Native App</h4>
+              <p>
+                Money saving app, aimed towards a younger market with design for
+                delight and play at it&#39;s core.
+              </p>
+            </div>
+        </div>
+
+        <div id="accessaproject" class="container">
+          <div id="accessimg">
+            <a href="accessatlas.html">
+              <picture>
+                <source
+                  srcset="/img/home/accessatlasprojectsmall.png"
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="/img/home/accessatlasprojectlarge.png"
+                  alt="AccessAtlasThumbnail"
+                />
+              </picture>
             </a>
-            <h4>Native App</h4>
+          </div>
+          <div id="accesstxt" class="project-description" onclick="navigate('accessatlas.html')">
+            <a href="accessatlas.html">
+              <h2>AccessAtlas</h2>
+            </a>
+            <h4>Responsive Web App</h4>
             <p>
-              Money saving app, aimed towards a younger market with design for
-              delight and play at it&#39;s core.
+              Location based maps application with a focus on accessibility for
+              all users.
             </p>
           </div>
         </div>
@@ -2069,16 +2071,13 @@
       </div>
       <div id="social-links">
         <a href="https://www.instagram.com/streetpawdography/" target="_blank"
-          ><img src="img/icons/instagram.svg" alt="Instagram Logo"
-        /></a>
+          ><i class="fa fa-instagram fa-2xl"></i></a>
         <a href="https://www.behance.net/rebeccamurraydesign" target="_blank"
-          ><img src="img/icons/behance.svg" alt="Behance Logo"
-        /></a>
+          ><i class="fa-brands fa-square-behance fa-2xl"></i></a>
         <a
           href="https://www.linkedin.com/in/rebeccamurraydesign/"
           target="_blank"
-          ><img src="img/icons/linkedin.svg" alt="LinkedIn Logo"
-        /></a>
+          ><i class="fa-brands fa-linkedin fa-2xl"></i> </a>
       </div>
       <div>
         <p>&copy; Rebecca Murray 2022</p>

@@ -32,7 +32,6 @@ body {
 }
 
 #header.responsive {
-  opacity: 0.9;
   max-height: 100% !important;
   transition: max-height 0.4s ease-out;
 }
@@ -58,6 +57,10 @@ body {
 #header .navtoggle.responsive li {
   display: block;
   padding-left: 0;
+}
+
+#header .navtoggle.responsive {
+  padding-bottom: 50%;
 }
 
 .navtoggle .divider {
@@ -231,14 +234,27 @@ a:focus {
   margin-right: 20px;
 }
 
+
+
 #recent-work {
   text-align: center;
   padding-top: 31px;
   padding-bottom: 31px;
-  padding-left: 101px;
-  padding-right: 101px;
   color: #ffffff;
   background-color: #050505;
+  border-top: 1px solid white;
+}
+
+#recent-work h3 {
+  line-height: 1.6rem;
+}
+
+#recent-work a {
+  color: white;
+}
+
+#recent-work a:hover {
+  text-decoration: underline;
 }
 
 #projects {
@@ -265,6 +281,11 @@ a:focus {
 
 .project-description {
   margin: 14px;
+  cursor: pointer;
+}
+
+.css-animation {
+  padding-top: 10px;
 }
 
 #projects h2,
@@ -291,9 +312,23 @@ footer h2 {
   margin-bottom: 20px;
 }
 
+footer .fa, footer .fa-brands {
+  font-size: 2.3em;
+  color: black;
+  padding: 4px;
+}
+
+footer i:hover {
+  color: #ed5a25;
+}
+
+footer a:hover {
+  color: #ed5a25;
+}
+
 footer img {
-  width: 26px;
-  height: 26px;
+  width: 32px;
+  height: 32px;
 }
 
 .contact-text {
@@ -476,6 +511,10 @@ Large devices (1024px or larger)
 
   .hero-wrapper #hero {
     order: -1;
+    position: relative;
+    top: 140px;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 
   #header .container {
@@ -514,4 +553,5 @@ Large devices (1024px or larger)
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
+
 }

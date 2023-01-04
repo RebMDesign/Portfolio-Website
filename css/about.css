@@ -48,7 +48,7 @@ Nav Bar Active - WorkSans - Light - Underlined - 20pt
   font-weight: 400;
   padding-top: 9px;
   padding-bottom: 9px;
-  padding-left: 70px;
+  padding-left: 60px;
   padding-right: 70px;
   border-radius: 10px;
   border: 1px solid #050505;
@@ -181,6 +181,11 @@ Medium devices (640px and larger)
     display: grid;
     grid-template-columns: 155px 155px;
     column-gap: 12px;
+  }
+
+  .download-resume-button {
+      padding-left: 70px;
+      padding-right: 70px;
   }
 }
 

@@ -28,6 +28,24 @@ function menuToggle() {
   }
 }
 
+function underlineCurrentNavItem() {
+  const current = document.location.pathname;
+  const navItems = $("#header nav li a");
+  if (current.endsWith("index.html")) {
+    $(navItems[0]).css("text-decoration", "underline");
+  } else if (current.endsWith("work.html")) {
+    $(navItems[1]).css("text-decoration", "underline");
+  } else if (current.endsWith("about.html")) {
+    $(navItems[2]).css("text-decoration", "underline");
+  }
+}
+
+underlineCurrentNavItem()
+
+function navigate(to) {
+  document.location.pathname = to;
+}
+
 addEventListener("resize", (event) => {
   if (window.innerWidth > 640 && isOpen) {
     menuToggle();
@@ -35,7 +53,6 @@ addEventListener("resize", (event) => {
 });
 
 addEventListener("scroll", (e) => {
-  console.log(window.scrollY);
   var header = document.getElementById("header");
   if (window.scrollY > 200) {
     if (!header.classList.contains("mini")) {

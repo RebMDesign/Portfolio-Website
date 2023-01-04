@@ -115,9 +115,12 @@ large devices (860px and larger)
   .alternate-position {
     background-color: #050505;
     color: white;
+    cursor: pointer;
   }
 
   .alternate-position a,
+  .alternate-position h2,
+  .alternate-position h3,
   .alternate-position h4 {
     color: white;
   }
